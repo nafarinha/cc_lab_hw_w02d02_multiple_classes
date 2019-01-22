@@ -13,11 +13,13 @@ class Bus
    return "Brum brum"
   end
 
-def total_passengers
-  return @passengers.count()
-end
+  def total_passengers
+    return @passengers.count()
+  end
 
-
+  def pick_up(person)
+    @passengers << person
+  end
 
 
 
