@@ -12,10 +12,14 @@ class TestBus < MiniTest::Test
     passenger_2 = Person.new("Anna", 19)
 
     @bus = Bus.new(22, "Ocean Terminal")
+
   end
 
   def test_drive
     assert_equal("Brum brum", @bus.drive)
   end
 
+  def test_total_passengers
+    assert_equal(0, @bus.total_passengers)
+  end
 end

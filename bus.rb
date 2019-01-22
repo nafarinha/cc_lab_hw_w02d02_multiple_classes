@@ -6,14 +6,16 @@ class Bus
   def initialize(route_number, destination)
     @route_number = route_number
     @destination = destination
-    @passengers = 0
+    @passengers = []
   end
 
   def drive
    return "Brum brum"
   end
 
-
+def total_passengers
+  return @passengers.count()
+end
 
 
 
