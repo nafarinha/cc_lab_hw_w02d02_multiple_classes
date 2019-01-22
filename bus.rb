@@ -1,7 +1,8 @@
 class Bus
 
   attr_reader :route_number, :destination
-  attr_accessor :passengers
+  #: 22/01/2019, 16:58:37 There's no need to have attr_accessor for passengers
+  #attr_accessor :passengers
 
   def initialize(route_number, destination)
     @route_number = route_number
