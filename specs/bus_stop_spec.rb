@@ -19,6 +19,10 @@ class TestBusStop < MiniTest::Test
     assert_equal("Tollcross", @bus_stop.name)
   end
 
+  def test_add_person_to_queue
+    @bus_stop.add_person_to_queue(@passenger_1)
+    assert_equal(1, @bus_stop.queue.count())   
+  end
 
 
 end

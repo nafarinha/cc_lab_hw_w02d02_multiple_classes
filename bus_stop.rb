@@ -1,13 +1,16 @@
 class BusStop
 
-attr_reader :name
+  attr_reader :name, :queue
 
-def initialize(name)
+  def initialize(name)
 
-  @name = name
-  @queue = []
-end
+    @name = name
+    @queue = []
+  end
 
+  def add_person_to_queue(person)
+    @queue << person
+  end
 
 
 end
